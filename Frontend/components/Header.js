@@ -10,7 +10,7 @@ const Header = () => {
         if (typeof document !== undefined) {
 
         // load JS bootstrap dependency
-        require('bootstrap/dist/js/bootstrap')   
+        require('bootstrap')   
 
         }
     // Run useEffect only once

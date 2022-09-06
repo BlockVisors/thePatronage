@@ -290,7 +290,7 @@ const Header = () => {
                             <div className="dropdown">
                                 <a className="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false" data-bs-offset="-100,10">
-                                    <span><i className="icofont-user"></i></span> <span className="d-none d-md-inline">Alex
+                                    <span><i className="icofont-user"></i></span> <span className="d-none d-md-inline">Average
                                         Joe</span>
                                 </a>
 

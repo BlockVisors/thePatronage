@@ -9,7 +9,7 @@ const Footer = () => {
                             <div className="col-lg-6">
                                 <div className="newsletter-part">
                                     <div className="ft-header">
-                                        <h4>Get The Latest Anftiz Updates</h4>
+                                        <h4>Get The Latest Updates from The Patronage</h4>
                                     </div>
                                     <form action="#">
                                         <input type="email" placeholder="Your Mail Address" />
@@ -93,8 +93,8 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
                 <div className="container">
-                    <p className="text-center py-4 mb-0">All rights reserved &copy; Anftiz || Design By: <a
-                            href="https://themeforest.net/user/labartisan/portfolio">Labartisan</a>
+                    <p className="text-center py-4 mb-0">All rights reserved &copy; The Patronage || Built By: <a
+                            href="https://themeforest.net/user/labartisan/portfolio">Block 21</a>
                     </p>
                 </div>
             </div>

@@ -42,221 +42,37 @@ const Header = () => {
                     <div className="header__menu ms-auto">
                         <ul className="header__nav mb-0">
                             <li className="header__nav-item">
-                                <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Home</a>
-
-                                <ul className="dropdown-menu header__nav-menu">
-                                    <li>
-                                    <Link href="/">
-                                        <a className={router.pathname == "/" ? "drop-down-item active" : "drop-down-item"}>Home Page One</a>
+                                 <Link href="/">
+                                        <a className={router.pathname == "/"}>Home</a>
                                     </Link> 
-                                    </li>
-                                    <li>
-                                    <Link href="/indextwo">
-                                        <a className={router.pathname == "/indextwo" ? "drop-down-item active" : "drop-down-item"}>Home Page Two</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/indexthree">
-                                        <a className={router.pathname == "/indexthree" ? "drop-down-item active" : "drop-down-item"}>Home Page Three</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/indexfour">
-                                        <a className={router.pathname == "/indexfour" ? "drop-down-item active" : "drop-down-item"}>Home Page Four</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/indexfive">
-                                        <a className={router.pathname == "/indexfive" ? "drop-down-item active" : "drop-down-item"}>Home Page Five</a>
-                                    </Link>
-                                    </li>
-                                </ul>
+
+        
                             </li>
                             <li className="header__nav-item">
                                 <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">NFTs</a>
 
-                                <ul className="dropdown-menu header__nav-menu">
-                                    <li>
-                                        <Link href="/createvariant">
-                                            <a className={router.pathname == "/createvariant" ? "drop-down-item active" : "drop-down-item"}>Create Variation</a>
-                                        </Link> 
-                                    </li>
-                                    <li>
-                                    <Link href="/createnft">
-                                        <a className={router.pathname == "/createnft" ? "drop-down-item active" : "drop-down-item"}>Create NFT</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/itemdetails">
-                                        <a className={router.pathname == "/itemdetails" ? "drop-down-item active" : "drop-down-item"}>NFT Details</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/explore">
-                                        <a className={router.pathname == "/explore" ? "drop-down-item active" : "drop-down-item"}>Explore 1</a>
-                                    </Link>
-                                    
-                                    </li>
-                                    <li>
-                                    <Link href="/exploretwo">
-                                        <a className={router.pathname == "/exploretwo" ? "drop-down-item active" : "drop-down-item"}>Explore 2</a>
-                                    </Link>
-                                    
-                                    </li>
-                                    
-                                    <li>
-                                        <Link href="/auction">
-                                        <a className={router.pathname == "/auction" ? "drop-down-item active" : "drop-down-item"}>Auction Page</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/category">
-                                        <a className={router.pathname == "/category" ? "drop-down-item active" : "drop-down-item"}>Category single</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/collection">
-                                        <a className={router.pathname == "/collection" ? "drop-down-item active" : "drop-down-item"}> NFT Collection</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/collectionsingle">
-                                        <a className={router.pathname == "/collectionsingle" ? "drop-down-item active" : "drop-down-item"}> Collection Single</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/wallet">
-                                        <a className={router.pathname == "/wallet" ? "drop-down-item active" : "drop-down-item"}> Wallet</a>
-                                    </Link>
-                                    </li>
-
-                                </ul>
+                               
                             </li>
                             <li className="header__nav-item">
                                 <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Author</a>
 
-                                <ul className="dropdown-menu header__nav-menu">
-                                    <li>
-                                    <Link href="/allauthors">
-                                        <a className={router.pathname == "/allauthors" ? "drop-down-item active" : "drop-down-item"}>All Author</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/allauthorstwo">
-                                        <a className={router.pathname == "/allauthorstwo" ? "drop-down-item active" : "drop-down-item"}>All Author 2</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/author">
-                                        <a className={router.pathname == "/author" ? "drop-down-item active" : "drop-down-item"}>Author Single</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/rank">
-                                        <a className={router.pathname == "/rank" ? "drop-down-item active" : "drop-down-item"}>Author Rank </a>
-                                    </Link>
-                                    </li>
-                                </ul>
+                               
                             </li>
                             <li className="header__nav-item">
                                 <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Blog</a>
 
-                                <ul className="dropdown-menu header__nav-menu">
-                                    <li>
-                                    <Link href="/blog">
-                                        <a className={router.pathname == "/blog" ? "drop-down-item active" : "drop-down-item"}>Blog Page One</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/blogtwo">
-                                        <a className={router.pathname == "/blogtwo" ? "drop-down-item active" : "drop-down-item"}>Blog Page Two</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/blogthree">
-                                        <a className={router.pathname == "/blogthree" ? "drop-down-item active" : "drop-down-item"} href="blog-3.html">Blog Page Three</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/blogsingle">
-                                        <a className={router.pathname == "/blogsingle" ? "drop-down-item active" : "drop-down-item"}>Blog Single </a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/blogsingletwo">
-                                        <a className={router.pathname == "/blogsingletwo" ? "drop-down-item active" : "drop-down-item"}>Blog Single Two </a>
-                                    </Link>
-                                    </li>
-                                </ul>
+                                
                             </li>
                             <li className="header__nav-item">
                                 <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Pages</a>
 
-                                <ul className="dropdown-menu header__nav-menu" data-popper-placement="top-start">
-                                    <li>
-                                    <Link href="/activity">
-                                        <a className={router.pathname == "/activity" ? "drop-down-item active" : "drop-down-item"}>Activity</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/help">
-                                        <a className={router.pathname == "/help" ? "drop-down-item active" : "drop-down-item"}>Help Center</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/helpsingle">
-                                        <a className={router.pathname == "/helpsingle" ? "drop-down-item active" : "drop-down-item"}>Help Center Single</a>
-                                    </Link>
-                                    </li>
-                                    <li>
-                                    <Link href="/policy">
-                                        <a className={router.pathname == "/policy" ? "drop-down-item active" : "drop-down-item"}>Privacy & Policy</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/terms">
-                                        <a className={router.pathname == "/terms" ? "drop-down-item active" : "drop-down-item"}>Terms & Condition</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/404">
-                                        <a className={router.pathname == "/404" ? "drop-down-item active" : "drop-down-item"}>404</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/maintainance">
-                                        <a className={router.pathname == "/maintainance" ? "drop-down-item active" : "drop-down-item"}>Maintainance Mode</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/signin">
-                                        <a className={router.pathname == "/signin" ? "drop-down-item active" : "drop-down-item"}>Sign In</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/signup">
-                                        <a className={router.pathname == "/signup" ? "drop-down-item active" : "drop-down-item"}>Sign Up</a>
-                                    </Link>
-                                    </li>
-
-                                    <li>
-                                    <Link href="/forgotpassword">
-                                        <a className={router.pathname == "/forgotpassword" ? "drop-down-item active" : "drop-down-item"}>Forgot Password</a>
-                                    </Link>
-                                    </li>
-                                </ul>
+                               
                             </li>
-                            <li className="header__nav-item">
+                            {/* <li className="header__nav-item">
                                 <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10"><svg
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -277,7 +93,7 @@ const Header = () => {
                                     </li>
                 
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 

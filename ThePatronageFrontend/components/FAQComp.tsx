@@ -42,7 +42,7 @@ return (
             <h2>
             <AccordionButton>
                 <Box flex='1' textAlign='left'>
-                Section 1 title
+                What is The Patronage?
                 </Box>
                 <AccordionIcon />
             </AccordionButton>
@@ -58,7 +58,7 @@ return (
             <h2>
             <AccordionButton>
                 <Box flex='1' textAlign='left'>
-                Section 1 title
+                What is an NFT?
                 </Box>
                 <AccordionIcon />
             </AccordionButton>

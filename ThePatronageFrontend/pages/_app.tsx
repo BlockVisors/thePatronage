@@ -68,7 +68,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </ApolloProvider>
           </RainbowKitProvider>
         </WagmiConfig>
-      <style jsx global>{`
+      {/* <style jsx global>{`
         html,
         body {
           min-height: 100%;
@@ -85,7 +85,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           height: 100%;
           min-height: 100%;
         }
-      `}</style>
+      `}</style> */}
     </ChakraProvider>
   )
 }

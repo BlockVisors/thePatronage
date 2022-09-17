@@ -25,9 +25,24 @@ const STEPS = [
     text:
       "You've just saved yourself a bunch of time not building the same stuff over and over again. Enjoy your free time, and build business features",
   },
+   {
+    title: 'Find your template',
+    text:
+      'Every template is embedded within an iframe, so you can easily check what they look like and test the responsive behaviour.',
+  },
+  {
+    title: 'Copy the code',
+    text:
+      'Click the code tab to see the actual source code of the template. Copy and paste it into your project and adjust it to your needs.',
+  },
+  {
+    title: 'Enjoy your free time',
+    text:
+      "You've just saved yourself a bunch of time not building the same stuff over and over again. Enjoy your free time, and build business features",
+  },
 ];
 
-export const GettingStarted = () => {
+export default function GettingStarted () {
   return (
     <Box bg={useColorModeValue('gray.50', 'gray.900')}>
       <Container maxW={'7xl'} py={{ base: 14, sm: 20, md: 32 }}>

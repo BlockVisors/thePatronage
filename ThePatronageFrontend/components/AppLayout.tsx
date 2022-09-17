@@ -6,7 +6,6 @@ import { Button } from '@chakra-ui/react';
 import NavCTA from './NavCTA'
 import NewsletterFooter from './NewsletterFooter';
 import useColorMode from '@chakra-ui/react';
-import ColorMode from './ColorMode';
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -26,7 +25,6 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
     <>
 
       <NavCTA />
-      <ColorMode />
       {children}
       <NewsletterFooter />
     </>

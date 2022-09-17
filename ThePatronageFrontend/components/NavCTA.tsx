@@ -3,6 +3,8 @@ import { Center, Heading } from '@chakra-ui/react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useDisconnect } from "wagmi";
 import ColorModeToggle from "./ColorMode";
+import { Logo } from './Logo';
+
 import {
   Box,
   Flex,
@@ -16,6 +18,7 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
+  useColorMode,
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
@@ -26,13 +29,15 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
+import { IoMoon, IoSunny } from 'react-icons/io5';
+import { BsSun, BsMoonStarsFill } from 'react-icons/bs';
+
+
 
 export default function NavCTA() {
-  const { data: account } = useAccount();
-  const { disconnect } = useDisconnect();
   const [mounted, setMounted] = useState(false);
-
     const { isOpen, onToggle } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode();
 
 
   useEffect(() => {
@@ -67,6 +72,8 @@ export default function NavCTA() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+         <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} />
+
           <Text
             fontSize='xl'
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
@@ -78,7 +85,9 @@ export default function NavCTA() {
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
+           
           </Flex>
+          
         </Flex>
 
         <Stack
@@ -95,6 +104,23 @@ export default function NavCTA() {
             Sign In
           </Button> */}
          {/* <ColorModeToggle /> */}
+          <Flex justifyContent="right" alignItems="right" padding={2}>
+            <IconButton
+              size={'sm'}
+              variant={'ghost'}
+              aria-label={'Toggle Color Mode'}
+              onClick={toggleColorMode}
+              icon={
+                colorMode == 'light' ? (
+                  <BsMoonStarsFill size={18} />
+                ) : (
+                  <BsSun size={18} />
+                )
+              }
+            />
+            </Flex>
+         <Flex justifyContent="right" alignItems="right" padding={2}>
+
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
@@ -108,7 +134,7 @@ export default function NavCTA() {
             }}>
             MarketPlace
           </Button>
-         
+         </Flex>
         </Stack>
          <Flex paddingLeft={6}>
          <Box paddingRight={4}

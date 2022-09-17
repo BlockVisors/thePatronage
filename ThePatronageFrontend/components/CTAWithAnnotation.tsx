@@ -37,7 +37,7 @@ export default function CallToActionWithAnnotation() {
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-            Gain access to a better Consumer Experience. Join VIP Groups and get access to Exclusive Monetize your product and service by rewarding your most loyal customers and reward loyalty points. Grant access to your pre-releases and sneak-peaks.
+            Gain access to a better Consumer Experience. Join VIP Groups and get access to Exclusive Experiences. Monetize your product or service by rewarding your most loyal customers and reward loyalty points. Grant access to your pre-releases and sneak-peaks.
           </Text>
           <Stack
             direction={'column'}

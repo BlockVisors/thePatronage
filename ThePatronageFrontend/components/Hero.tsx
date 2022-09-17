@@ -39,7 +39,7 @@ const Feature: FC = ({ children, ...rest }) => {
   );
 };
 
-export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
+export default function Hero ({ categoriesCount, templatesCount }: HeroProps) {
   return (
     <Box
       bg={useColorModeValue('gray.100', 'gray.900')}
@@ -61,21 +61,21 @@ export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
             as={'h2'}
             fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
             maxW={'2xl'}>
-            <TextUnderline>Production-ready</TextUnderline> Chakra UI Templates
-            for developers
+            <TextUnderline>Real World Utility</TextUnderline> Innovative Ecosystem
+            for collectors of NFTs.
           </Heading>
           <Stack spacing={5}>
             <Text color={'gray.500'} fontSize={{ md: 'lg' }} maxW={'2xl'}>
-              A growing collection of hand-crafted & responsive Chakra UI
-              templates ready to drop into your React project.
+              Buy and Sell NFTs for access to experience based offrings from select companies. 
+              Anything from Hotel stays, Resort Packages, Dinners, Ticketed Offerings and VIP Experiences. See User Benefits below
             </Text>
             <Stack
               direction={{ base: 'column', sm: 'row' }}
               spacing={{ base: 6, sm: 12 }}>
               <Stack spacing={4}>
-                <Feature>Responsive Demos</Feature>
-                <Feature>Easy Customizable</Feature>
-                <Feature>Written in TypeScript</Feature>
+                <Feature>Flexible Purchasing</Feature>
+                <Feature>Profit from Resale</Feature>
+                <Feature></Feature>
               </Stack>
               <Stack spacing={4}>
                 <Feature>100% Open Source</Feature>
@@ -97,7 +97,7 @@ export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
                 fontSize={'md'}
                 rounded={'md'}
                 rightIcon={<IoArrowForward />}>
-                Browse Templates
+               MarketPlace
               </Button>
             </NextLink>
             <Button
@@ -115,7 +115,7 @@ export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
                 bg: useColorModeValue('blackAlpha.200', 'blackAlpha.600'),
                 color: useColorModeValue('gray.600', 'gray.100'),
               }}>
-              Suggest Template
+              Get started
             </Button>
           </Stack>
         </Stack>

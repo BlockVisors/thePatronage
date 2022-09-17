@@ -21,10 +21,10 @@ const Home: NextPage = () => {
   return (
     <>
     <CTAWithAnnotation />
-    {/* <Hero /> */}
-    <SampleExperiences />
-     {/* <GettingStarted /> */}
+     <Hero />
+     <SampleExperiences />
       <ThreeColumnFeature />
+      <GettingStarted />
       <FAQComp />
       </>
   )

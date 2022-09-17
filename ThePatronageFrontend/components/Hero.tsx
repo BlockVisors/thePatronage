@@ -75,7 +75,7 @@ export default function Hero ({ categoriesCount, templatesCount }: HeroProps) {
               <Stack spacing={4}>
                 <Feature>Flexible Purchasing</Feature>
                 <Feature>Profit from Resale</Feature>
-                <Feature></Feature>
+                <Feature> Join Exclusive Drops</Feature>
               </Stack>
               <Stack spacing={4}>
                 <Feature>100% Open Source</Feature>

@@ -21,7 +21,7 @@ class Document extends NextDocument {
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
           <NextScript />
-          <style jsx global>{`
+          {/* <style jsx global>{`
             html, body {
               min-height: 100%;
               height: 100%;
@@ -36,7 +36,7 @@ class Document extends NextDocument {
               height: 100%;
               min-height: 100%;
             }
-          `}</style>
+          `}</style> */}
         </body>
       </Html>
     );

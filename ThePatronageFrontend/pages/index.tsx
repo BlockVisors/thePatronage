@@ -9,6 +9,7 @@ import CTAWithAnnotation from '../components/CTAWithAnnotation';
 import SampleExperiences from '../components/SampleExperiences';
 import Hero from '../components/Hero';
 import GettingStarted from '../components/GettingStarted';
+import FAQComp from '../components/FAQComp';
 
 import { Navbar } from "../components";
 
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
     <SampleExperiences />
      {/* <GettingStarted /> */}
       <ThreeColumnFeature />
+      <FAQComp />
       </>
   )
 }

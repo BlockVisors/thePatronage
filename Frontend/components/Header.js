@@ -45,31 +45,29 @@ const Header = () => {
                                  <Link href="/">
                                         <a className={router.pathname == "/"}>Home</a>
                                     </Link> 
-
-        
                             </li>
                             <li className="header__nav-item">
-                                <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">NFTs</a>
-
+                                <Link href="/">
+                                        <a className={router.pathname == "/"}>About</a>
+                                    </Link> 
                                
                             </li>
                             <li className="header__nav-item">
-                                <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Author</a>
-
+                                 <Link href="/">
+                                        <a className={router.pathname == "/"}>Market</a>
+                                    </Link> 
                                
                             </li>
                             <li className="header__nav-item">
-                                <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Blog</a>
-
+                                 <Link href="/">
+                                        <a className={router.pathname == "/"}>Redeem</a>
+                                    </Link> 
                                 
                             </li>
                             <li className="header__nav-item">
-                                <a className="header__nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,10">Pages</a>
-
+                               <Link href="/">
+                                        <a className={router.pathname == "/"}>Businesses</a>
+                                    </Link> 
                                
                             </li>
                             {/* <li className="header__nav-item">

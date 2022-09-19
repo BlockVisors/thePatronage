@@ -68,6 +68,8 @@ export default function GettingStarted () {
               <Flex
                 w={10}
                 h={10}
+                // bg="green.100" _dark={{ bg: "green.900" }}
+                // color="green.700" _dark={{ bg: "green.300" }}
                 bg={useColorModeValue('green.100', 'green.900')}
                 color={useColorModeValue('green.700', 'green.300')}
                 fontWeight={700}
@@ -80,6 +82,7 @@ export default function GettingStarted () {
               <Text
                 fontFamily={'heading'}
                 fontSize={'xl'}
+                // color="gray.700" _dark={{ bg: "white" }}
                 color={useColorModeValue('gray.700', 'white')}>
                 {step.title}
               </Text>

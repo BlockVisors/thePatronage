@@ -54,7 +54,8 @@ export const HeroComponents = () => {
           align={'center'}
           flex={1}
           p={8}
-          bg={useColorModeValue('white', 'gray.800')}
+          bg="gray.50" _dark={{ bg: "gray.800" }}
+          // bg={useColorModeValue('white', 'gray.800')}
           rounded={'3xl'}
           boxShadow={'xl'}
           w={{ base: `${100 - i * 10}%`, sm: widths[i] }}

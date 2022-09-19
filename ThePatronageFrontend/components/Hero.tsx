@@ -34,6 +34,7 @@ const Feature: FC = ({ children, ...rest }) => {
       <Icon as={IoCheckmarkSharp} color={'green.400'} w={5} h={5} />
       <Text color={'gray.500'} fontWeight={600}>
         {children}
+
       </Text>
     </Stack>
   );

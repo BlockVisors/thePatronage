@@ -74,7 +74,7 @@ export const OpenSource = ({
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Heading as={'h3'} mb={2}>
-            We're <TextUnderline>open source</TextUnderline>
+            We are <TextUnderline>open source</TextUnderline>
           </Heading>
           <Text color={'gray.500'} maxW={'4xl'} fontSize={{ md: 'lg' }}>
             and you can become a part of it! If you’re interested in

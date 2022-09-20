@@ -9,6 +9,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
+  Link
 } from '@chakra-ui/react';
 
 export default function CallToActionWithAnnotation() {
@@ -65,10 +66,11 @@ export default function CallToActionWithAnnotation() {
               }}>
               Businesses
             </Button>
-            <Button variant={'link'} colorScheme={'blue'} size={'sm'} 
-            href={'https://thepatronage.io/Docs'}>
-              Learn more
+             <Link href={'/AboutUs'}>
+                <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+                   Learn more
             </Button>
+            </Link>
             <Box>
               {/* <Icon
                 as={Arrow}

@@ -29,7 +29,7 @@ const Feature = ({ heading, text }: FeatureProps) => {
 
 export default function gridListWithCTA() {
   return (
-    <Box as={Container} maxW="7xl" mt={14} p={4}>
+    <Box as={Container} maxW="7xl" mt={14} p={20}>
       <Grid
         templateColumns={{
           base: 'repeat(1, 1fr)',

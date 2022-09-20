@@ -7,9 +7,11 @@ import {
   Text,
   Stack,
   HStack,
-  VStack,
+  VStack
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
+import { TextUnderline } from './TextUnderline';
+
 
 // Replace test data with your own
 const features = Array.apply(null, Array(8)).map(function (x, i) {
@@ -22,13 +24,18 @@ const features = Array.apply(null, Array(8)).map(function (x, i) {
 
 export default function GridListWithHeading() {
   return (
-    <Box p={4}>
+    <Box p={20}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>This is the headline</Heading>
+        {/* <Heading fontSize={'3xl'}>This is the headline</Heading> */}
+         <Heading
+            as={'h2'}
+            fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
+            maxW={'2xl'}>
+            <TextUnderline>Benefits</TextUnderline> of
+            using The Patronage...
+          </Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+           The Best Benefits for our Users
         </Text>
       </Stack>
 

@@ -7,11 +7,13 @@ import {
   Heading,
   Text,
   Container,
+  Flex
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick';
+import { TextUnderline } from './TextUnderline';
 
 // Settings for the slider
 const settings = {
@@ -63,6 +65,20 @@ export default function SampleExperiences() {
   ];
 
   return (
+      <Stack>
+       {/* <Heading
+            as={'h2'}
+            fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
+            maxW={'2xl'}>
+            <TextUnderline>Real World Utility</TextUnderline> Innovative Ecosystem
+            for collectors of NFTs.
+          </Heading> */}
+          <Box paddingLeft={60} paddingRight={60} paddingTop={40}>
+           <Heading fontSize={'3xl'}>Experience The Patronage</Heading>
+        <Text color={'gray.600'} fontSize={'xl'}>
+          Some Sneak peaks below of experiences we offer on platform.
+        </Text>
+        </Box>
     <Box
       padding={160}
       position={'relative'}
@@ -70,6 +86,7 @@ export default function SampleExperiences() {
       width={'full'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
+     
       <link
         rel="stylesheet"
         type="text/css"
@@ -105,6 +122,7 @@ export default function SampleExperiences() {
         onClick={() => slider?.slickNext()}>
         <BiRightArrowAlt size="40px" />
       </IconButton>
+      
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
@@ -137,5 +155,6 @@ export default function SampleExperiences() {
         ))}
       </Slider>
     </Box>
+    </Stack>
   );
 }

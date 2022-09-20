@@ -72,13 +72,14 @@ export default function NavCTA() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-         <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} />
-
+           <Link href={'/'}>
+         <Icon as={Logo} w={{ base: 8 }} h={{ base: 8 }} color={'purple.600'} />
+          </Link>
           <Text
             fontSize='xl'
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            href={'/'}
+            // href={'/'}
             color={useColorModeValue('gray.800', 'white')}>
             The Patronage
           </Text>
@@ -121,6 +122,7 @@ export default function NavCTA() {
             </Flex>
          <Flex justifyContent="right" alignItems="right" padding={2}>
 
+          <Link href={'https://market.thepatronage.io'}>
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             variant='outline'
@@ -128,12 +130,13 @@ export default function NavCTA() {
             fontWeight={600}
             colorScheme='plum'
             bg={'pink.400'}
-            href={'#'}
+            // href={'#'}
             _hover={{
               bg: 'pink.300',
             }}>
             MarketPlace
           </Button>
+          </Link>
          </Flex>
         </Stack>
          <Flex paddingLeft={6}>
@@ -337,12 +340,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'For Businesses',
         subLabel: 'Create Experience NFTs with us to increase revenue opportunity',
-        href: '#',
+        href: '/businesses',
       },
        {
-        label: 'For Customers',
+        label: 'For Users',
         subLabel: 'Get setup with the Patronage',
-        href: '#',
+        href: '/users',
       },
       {
         label: 'FAQ',
@@ -361,12 +364,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'VIP NFT',
         subLabel: 'Purchase one of our limited Patronage Pass NFTs for access to limited edition drops',
-        href: '#',
+        href: '/VIPNFT',
       },
       {
         label: '$EXCH Token',
         subLabel: 'Our Platform Token - The Patron Exchange Token - Coming Soon',
-        href: '#',
+        href: '/PatronExchangeToken',
       },
        {
         label: 'Patronage DAO',

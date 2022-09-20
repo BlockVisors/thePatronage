@@ -9,22 +9,26 @@ import CTAWithAnnotation from '../components/CTAWithAnnotation';
 import SampleExperiences from '../components/SampleExperiences';
 // import Hero from '../components/Hero';
 // import GettingStarted from '../components/GettingStarted';
-import ArticleList from '../components/ArticleList';
+// import ContactSocial from '../components/ContactSocial';
 
 import { Navbar } from "../components";
+import GridCTA from "../components/GridCTA";
+import GridHeading from "../components/GridHeading";
+import CTAWithVideo from "../components/CTAWithVideo";
 
-const Docs: NextPage = () => {
+
+const Home: NextPage = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
 
   return (
     <>
-    <Heading>
-    Redeem
-    </Heading>
+     <CTAWithVideo />
+      <GridCTA />
+      <GridHeading />
       </>
   )
 }
 
-export default Docs
+export default Home

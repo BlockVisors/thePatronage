@@ -69,9 +69,9 @@ const PackageTier = ({
     </Stack>
   );
 };
-const ThreeTierPricingHorizontal = () => {
+const PricingHorizontal = () => {
   return (
-    <Box py={6} px={5} min={'100vh'}>
+    <Box py={6} px={5}>
       <Stack spacing={4} width={'100%'} direction={'column'}>
         <Stack
           p={5}
@@ -122,4 +122,4 @@ const ThreeTierPricingHorizontal = () => {
   );
 };
 
-export default ThreeTierPricingHorizontal;
+export default PricingHorizontal;

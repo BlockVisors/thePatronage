@@ -7,11 +7,15 @@ import FeatureImage from '../components/FeatureImage';
 import ThreeColumnFeature from '../components/ThreeColumnFeature';
 import CTAWithAnnotation from '../components/CTAWithAnnotation';
 import SampleExperiences from '../components/SampleExperiences';
-import Hero from '../components/Hero';
-import GettingStarted from '../components/GettingStarted';
-import ContactSocial from '../components/ContactSocial';
+// import Hero from '../components/Hero';
+// import GettingStarted from '../components/GettingStarted';
+// import ContactSocial from '../components/ContactSocial';
 
 import { Navbar } from "../components";
+import Pricing from "../components/Pricing1"
+import PricingHorizontal from '../components/PricingHorizontal';
+
+
 
 const Home: NextPage = () => {
   const [mounted, setMounted] = useState(false);
@@ -22,7 +26,9 @@ const Home: NextPage = () => {
     <>
      <FeatureImage />
       <ThreeColumnFeature />
-      <ContactSocial />
+      {/* <ContactSocial /> */}
+      <Pricing />
+      <PricingHorizontal />
       </>
   )
 }

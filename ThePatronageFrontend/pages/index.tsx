@@ -7,9 +7,11 @@ import FeatureImage from '../components/FeatureImage';
 import ThreeColumnFeature from '../components/ThreeColumnFeature';
 import CTAWithAnnotation from '../components/CTAWithAnnotation';
 import SampleExperiences from '../components/SampleExperiences';
-import Hero from '../components/Hero';
-import GettingStarted from '../components/GettingStarted';
+// import Hero from '../components/Hero';
+// import GettingStarted from '../components/GettingStarted';
 import FAQComp from '../components/FAQComp';
+import GridHeadingHome from '../components/GridHeadingHome';
+import SS from '../components/SS'
 
 import { Navbar } from "../components";
 
@@ -21,10 +23,13 @@ const Home: NextPage = () => {
   return (
     <>
     <CTAWithAnnotation />
-     <Hero />
+     {/* <Hero /> */}
+     <SS />
+     <GridHeadingHome />
      <SampleExperiences />
-      <ThreeColumnFeature />
-      <GettingStarted />
+      {/* <ThreeColumnFeature /> */}
+      {/* <GettingStarted /> */}
+
       <FAQComp />
       </>
   )

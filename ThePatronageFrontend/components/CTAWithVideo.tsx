@@ -37,13 +37,13 @@ export default function CallToActionWithVideo() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'red.400',
+                bg: 'gray.400',
                 zIndex: -1,
               }}>
               Write once,
             </Text>
             <br />
-            <Text as={'span'} color={'red.400'}>
+            <Text as={'span'} color={'purple.400'}>
               use everywhere!
             </Text>
           </Heading>
@@ -60,9 +60,9 @@ export default function CallToActionWithVideo() {
               size={'lg'}
               fontWeight={'normal'}
               px={6}
-              colorScheme={'red'}
-              bg={'red.400'}
-              _hover={{ bg: 'red.500' }}>
+              colorScheme={'purple'}
+              bg={'purple.400'}
+              _hover={{ bg: 'purple.500' }}>
               Get started
             </Button>
             <Button
@@ -88,7 +88,7 @@ export default function CallToActionWithVideo() {
             top={'-20%'}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('red.50', 'red.400')}
+            color={useColorModeValue('pink.50', 'pink.400')}
           />
           <Box
             position={'relative'}
@@ -103,7 +103,7 @@ export default function CallToActionWithVideo() {
               _hover={{ bg: 'transparent' }}
               icon={<PlayIcon w={12} h={12} />}
               size={'lg'}
-              color={'white'}
+              color={'purple'}
               position={'absolute'}
               left={'50%'}
               top={'50%'}

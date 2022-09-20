@@ -74,16 +74,42 @@ return (
             <h2>
             <AccordionButton>
                 <Box flex='1' textAlign='left'>
-                Section 1 title
+                What is the Patron Exchange Token - $EXCH?
                 </Box>
                 <AccordionIcon />
             </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            The $EXCH utility token is at the core of the Patronage ecosystem. $EXCH is passively earned daily through staking of Patronage Passes. It can also be earned as rewards by participating in certain events and exclusive drops.
+
+            </AccordionPanel>
+        </AccordionItem>
+          <AccordionItem>
+            <h2>
+            <AccordionButton>
+                <Box flex='1' textAlign='left'>
+                What types of experiences are availbable on The Patronage?
+                </Box>
+                <AccordionIcon />
+            </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+            There will be many types of real-life experiences. However, in the beginning we will focus on Resort Packages, Entertainment, Hotels, Excursions, Unique dining experiences, and celebrity meetups.
+
+            </AccordionPanel>
+        </AccordionItem>
+          <AccordionItem>
+            <h2>
+            <AccordionButton>
+                <Box flex='1' textAlign='left'>
+                How does redemption work?
+                </Box>
+                <AccordionIcon />
+            </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+           Redemption works by issuing an Apple Wallet or Google Pay pass that is tied to an NFT. After a pass has been issued, we verify ownership so that the holder can be admitted entrace or access. Businesses can scan the QR code passes to verify.
+
             </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -92,7 +118,7 @@ return (
                 <h2>
                 <AccordionButton>
                     <Box flex='1' textAlign='left'>
-                    Section 2 title
+                    What is the Patronage Pass?
                     </Box>
                     {isExpanded ? (
                     <MinusIcon fontSize='12px' />
@@ -102,10 +128,7 @@ return (
                 </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+               It is a limited edition NFT pass which will grant you access to exclusive drops on our platform. In the future...the will discounts and rewards from our partners.
                 </AccordionPanel>
             </>
             )}

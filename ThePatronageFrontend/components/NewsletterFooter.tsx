@@ -32,9 +32,11 @@ const Logo = (props: any) => {
     //     fill="#2F855A"
     //   />
     // </svg>
+   <Link href={'/'}>
    <Text fontSize='xl'>
     The Patronage
    </Text>
+   </Link>
   );
 };
 
@@ -106,22 +108,22 @@ export default function NewsletterFooter() {
                <SocialButton label={'Medium'} href={'https://www.instagram.com/thepatronageglobal/?hl=en'}>
                 <FaMedium />
               </SocialButton>
-               <SocialButton label={'Discord'} href={'https://www.instagram.com/thepatronageglobal/?hl=en'}>
+               <SocialButton label={'Discord'} href={'/'}>
                 <FaDiscord />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About us</Link>
+            <Link href={'/AboutUs'}>About us</Link>
             <Link href={'#'}>Medium</Link>
             <Link href={'#'}>Contact us</Link>
             <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Testimonials</Link>
+            <Link href={'#'}>How it Works</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Support & Docs</ListHeader>
-            <Link href={'#'}>FAQ</Link>
+            <Link href={'/FAQ'}>FAQ</Link>
             <Link href={'#'}>Terms of Service</Link>
             <Link href={'#'}>Legal</Link>
             <Link href={'#'}>Privacy Policy</Link>

@@ -7,8 +7,8 @@ import FeatureImage from '../components/FeatureImage';
 import ThreeColumnFeature from '../components/ThreeColumnFeature';
 import CTAWithAnnotation from '../components/CTAWithAnnotation';
 import SampleExperiences from '../components/SampleExperiences';
-import Hero from '../components/Hero';
-import GettingStarted from '../components/GettingStarted';
+// import Hero from '../components/Hero';
+// import GettingStarted from '../components/GettingStarted';
 
 import { Navbar } from "../components";
 

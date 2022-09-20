@@ -8,7 +8,7 @@ import {
   Flex,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import { DISCORD_INVITE_LINK } from '../../constants';
+import { DISCORD_INVITE_LINK } from '../constants';
 import { IoLogoDiscord } from 'react-icons/io5';
 
 export const DiscordBanner = () => {

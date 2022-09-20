@@ -28,7 +28,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-export default function ThreeTierPricing() {
+export default function Pricing1() {
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
